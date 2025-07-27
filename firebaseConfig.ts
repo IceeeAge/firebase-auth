@@ -30,6 +30,7 @@ try {
   auth = initializeAuth(app, {
     persistence: getReactNativePersistence(AsyncStorage),
   });
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 } catch (e) {
   // If already initialized (e.g., during Fast Refresh), use getAuth
   auth = getAuth(app);
